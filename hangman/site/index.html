@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hangman sample</title>
+    <meta name="description" content="Demonstrate a set of JS features">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="content">
+        <p id="cheat"></p>
+        <p id="letters"></p>
+        <form id="entry-form">
+            <input type="text" name="input" maxlength=1 autofocus></input>
+            <input type="button" name="submit" value="submit letter"></input>
+        </form>
+        <p>remaining guesses: <span id="guesses"></span></p>
+    </div>
+    <script src="js/src/main.js"></script>
+    <noscript>
+        <p>This page requires javascript to display properly. Please enable javascript and refresh the page.</p>
+    </noscript>
+</body>
+</html>

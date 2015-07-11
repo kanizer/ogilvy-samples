@@ -1,0 +1,34 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.content {
+    padding: 50px;
+    font-family: Helvetica, Arial;
+}
+
+#cheat {
+    color: #e6e6e6;
+}
+
+#letters {
+    font-size: 3em;
+    letter-spacing: 0.5em;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input[type="text"] {
+    width: 50px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Layout sample</title>
+    <meta name="description" content="Demonstrate a set of HTML/CSS features">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="header"></div>
+    <div class="content">
+        <div class="column alt-ordered-list tablet phone">
+            <ol>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ol>
+        </div>
+        <div class="column rounded-box tablet">
+            <div></div>
+        </div>
+        <div class="column center-textblock">
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="column scaled-image"><img src="http://tinyurl.com/py22xnc" alt="inception mario"></img></div>
+    </div>
+    <div class="footer"></div>
+    <!--[if IE 8]>
+        <script type="text/javascript">
+            // append flag for alternating row colors
+            var i, len, li, lis = document.getElementsByTagName('li');
+            for(i = 0, len = lis.length; i < len; i++) {
+                li = lis[i];
+                if(i % 2 !== 0) {
+                    li.className = li.className.indexOf('even') === -1 ? li.className + 'even' : li.className;
+                }
+            }
+        </script>
+        <noscript>
+            <p>This page requires javascript to display properly. Please enable javascript and refresh the page.</p>
+        </noscript>
+    <![endif]-->
+</body>
+</html>

@@ -1,0 +1,9 @@
+# folders
+node_modules
+gulp
+
+# files
+gulpfile.js
+package.json
+npm-debug.log
+.DS_Store

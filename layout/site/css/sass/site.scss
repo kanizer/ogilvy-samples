@@ -1,0 +1,114 @@
+@import "normalize.scss";
+
+$basePadding: 21px;
+$headerH: 44px;
+$rowColorEven: grey;
+$rowColorOdd: white;
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.header,
+.footer {
+    width: 100%;
+    height: $headerH;
+    position: fixed;
+    background: #999;
+}
+
+.footer {
+    bottom: 0px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.column {
+    height: 100%;
+    width: 25%;
+    display: block;
+    float: left;
+    outline: 1px solid #e6e6e6;
+}
+
+ol {
+    margin: $headerH $basePadding;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+li {
+    background: $rowColorOdd;
+    padding: 5px 0;
+}
+
+li:nth-child(even) {
+    background: $rowColorEven;
+}
+
+.even {
+    background: $rowColorEven;
+}
+
+.rounded-box > div {
+    width: 80%;
+    height: 80%;
+    margin: $headerH 0 0 $basePadding;
+    border-radius: 5px;
+    behavior: url('js/vendor/border-radius.htc');
+    background: teal;
+}
+
+.center-textblock {
+    display: table;
+}
+
+.center-textblock > div {
+    display: table-cell;
+    padding: 0 $basePadding;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.scaled-image > img {
+    width: 100%;
+}
+
+/**
+ * I realize this is pretty thin for device detection, but I'm assuming
+ * the detection suite I would use is not being tested here...
+ */
+// tablet portrait
+@media screen and (max-width: 700px) {
+    .column {
+        width: 50%;
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+}
+
+// phone
+@media screen and (max-width: 400px) {
+    .column {
+        width: 100%;
+        display: none;
+    }
+
+    .phone {
+        display: block;
+    }
+}
